@@ -1,0 +1,5 @@
+node_modules/
+.quarto/
+docs/
+*.css.map
+.DS_Store

@@ -1,0 +1,16 @@
+project:
+  output-dir: docs
+
+format:
+  revealjs:
+    theme: [default, ../../scss/quarto-theme.scss]
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    slide-number: true
+    hash-type: number
+    center: false
+    transition: fade
+    width: 1600
+    height: 900
+    margin: 0.1

@@ -1,0 +1,245 @@
+// ============================================
+// Quarto Craft - Main SCSS Entry Point
+// ============================================
+
+// 1. Sass Modules & Design Tokens
+@use "../design-system/tokens" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
+// 2. Components (자체적으로 토큰을 @use하므로 여기서는 로드만)
+@use "../design-system/components/callout";
+@use "../design-system/components/table";
+@use "../design-system/components/code";
+
+// ============================================
+// 3. Web Fonts
+// ============================================
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+// ============================================
+// 3. Base Typography
+// ============================================
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  @include text-style($body-default);
+  color: $color-text-primary;
+  background-color: $color-bg-primary;
+  word-break: keep-all;       // 한국어 단어 단위 줄바꿈
+  overflow-wrap: break-word;
+}
+
+// --- Headings ---
+h1, .title { @include heading-style(h1); }
+h2 { @include heading-style(h2); }
+h3 { @include heading-style(h3); }
+h4 { @include heading-style(h4); }
+h5 { @include heading-style(h5); }
+h6 { @include heading-style(h6); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans;
+  color: $headings-color;
+
+  + p {
+    margin-top: $spacing-2;
+  }
+}
+
+// --- Paragraphs ---
+p {
+  margin-bottom: $paragraph-spacing;
+}
+
+// --- Lead Text ---
+.lead,
+.subtitle,
+.description {
+  @include text-style($body-large);
+  color: $color-text-secondary;
+}
+
+// --- Small / Caption ---
+small,
+.small,
+figcaption,
+.figure-caption {
+  @include text-style($caption-text);
+  color: $color-text-secondary;
+}
+
+// --- Links ---
+a {
+  color: $color-text-link;
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $color-text-link-hover;
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+// --- Blockquote ---
+blockquote {
+  @include text-style($blockquote-text);
+  color: $color-text-secondary;
+  border-left: 4px solid $color-primary-300;
+  padding: $spacing-3 $spacing-5;
+  margin: $spacing-6 0;
+  background-color: $color-bg-secondary;
+  border-radius: 0 $radius-md $radius-md 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  cite,
+  footer {
+    display: block;
+    margin-top: $spacing-2;
+    font-family: $font-family-sans;
+    font-size: $font-size-sm;
+    font-style: normal;
+    color: $color-text-tertiary;
+
+    &::before {
+      content: "\2014\00a0";
+    }
+  }
+}
+
+// --- Lists ---
+ul, ol {
+  padding-left: $spacing-6;
+  margin-bottom: $paragraph-spacing;
+
+  li {
+    margin-bottom: $spacing-1;
+    line-height: $line-height-normal;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: $spacing-1;
+    margin-bottom: 0;
+  }
+}
+
+// --- Horizontal Rule ---
+hr {
+  border: none;
+  border-top: 1px solid $color-border-default;
+  margin: $section-gap-md 0;
+}
+
+// --- Selection ---
+::selection {
+  background-color: rgba($color-primary-500, 0.2);
+  color: $color-text-primary;
+}
+
+// ============================================
+// 5. Quarto-specific Overrides
+// ============================================
+
+// --- TOC (Table of Contents) ---
+#TOC,
+nav.toc-active {
+  font-family: $font-family-sans;
+  font-size: $toc-font-size;
+
+  a {
+    color: $toc-color;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $color-text-link;
+    }
+
+    &.active {
+      color: $color-primary-600;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+// --- Title Block ---
+.quarto-title {
+  margin-bottom: $section-gap-md;
+
+  .title {
+    @include heading-style(h1);
+    margin-bottom: $spacing-4;
+  }
+
+  .subtitle {
+    @include text-style($body-large);
+    color: $color-text-secondary;
+    margin-bottom: $spacing-4;
+  }
+
+  .quarto-title-meta {
+    font-size: $font-size-sm;
+    color: $color-text-tertiary;
+    border-top: 1px solid $color-border-default;
+    padding-top: $spacing-4;
+  }
+}
+
+// --- Figure ---
+figure {
+  margin: $spacing-6 0;
+
+  img {
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
+  }
+
+  figcaption {
+    margin-top: $spacing-2;
+  }
+}
+
+// --- Footnotes ---
+.footnotes {
+  margin-top: $section-gap-md;
+  padding-top: $spacing-4;
+  border-top: 1px solid $color-border-default;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+}
+
+// --- Print Styles ---
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  pre, blockquote, table, figure {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,18 @@
+project:
+  output-dir: docs
+
+format:
+  html:
+    theme:
+      - cosmo
+      - ../../scss/quarto-theme.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "목차"
+    number-sections: true
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    reference-location: margin

@@ -1,0 +1,81 @@
+// ============================================
+// Component: Callout
+// ============================================
+// Quarto의 .callout 클래스에 맞춤 스타일 적용
+
+@use "sass:color";
+@use "../tokens" as *;
+
+.callout {
+  border-radius: $radius-md;
+  border-left: 4px solid;
+  padding: $spacing-4 $spacing-5;
+  margin: $spacing-6 0;
+  background-color: $color-bg-secondary;
+  box-shadow: $shadow-sm;
+
+  .callout-header {
+    font-family: $font-family-sans;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    margin-bottom: $spacing-2;
+    display: flex;
+    align-items: center;
+    gap: $spacing-2;
+  }
+
+  .callout-body {
+    font-size: $font-size-base;
+    line-height: $line-height-normal;
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // --- Variants ---
+  &.callout-note {
+    border-left-color: $color-callout-note;
+    background-color: rgba($color-callout-note, 0.05);
+
+    .callout-header {
+      color: color.adjust($color-callout-note, $lightness: -10%);
+    }
+  }
+
+  &.callout-tip {
+    border-left-color: $color-callout-tip;
+    background-color: rgba($color-callout-tip, 0.05);
+
+    .callout-header {
+      color: color.adjust($color-callout-tip, $lightness: -10%);
+    }
+  }
+
+  &.callout-warning {
+    border-left-color: $color-callout-warning;
+    background-color: rgba($color-callout-warning, 0.05);
+
+    .callout-header {
+      color: color.adjust($color-callout-warning, $lightness: -10%);
+    }
+  }
+
+  &.callout-important {
+    border-left-color: $color-callout-important;
+    background-color: rgba($color-callout-important, 0.05);
+
+    .callout-header {
+      color: color.adjust($color-callout-important, $lightness: -10%);
+    }
+  }
+
+  &.callout-caution {
+    border-left-color: $color-callout-caution;
+    background-color: rgba($color-callout-caution, 0.05);
+
+    .callout-header {
+      color: color.adjust($color-callout-caution, $lightness: -10%);
+    }
+  }
+}

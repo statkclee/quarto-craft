@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "책 제목"
+  author: "저자명"
+  date: today
+  date-format: "YYYY년 MM월 DD일"
+  chapters:
+    - index.qmd
+    - chapter-01.qmd
+    - chapter-02.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - ../../scss/quarto-theme.scss
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    toc: true
+    number-sections: true
+  pdf:
+    documentclass: report
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
