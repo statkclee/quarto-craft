@@ -18,6 +18,7 @@ format:
       - cosmo
       - ../../scss/quarto-theme.scss
     lang: ko
+    favicon: ../../design-system/brand/favicon.svg
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
     toc: true

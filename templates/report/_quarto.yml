@@ -11,6 +11,7 @@ format:
     toc-title: "목차"
     number-sections: true
     lang: ko
+    favicon: ../../design-system/brand/favicon.svg
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
     fig-cap-location: bottom

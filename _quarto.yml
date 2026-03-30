@@ -13,3 +13,4 @@ format:
     lang: ko
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
+    favicon: design-system/brand/favicon.svg
