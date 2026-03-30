@@ -23,7 +23,12 @@ quarto render
 ```
 지정하지 않으면 report 템플릿 기본 렌더링.
 
-### 4. 검증
+### 4. Shiny app 동기화
+```bash
+cp -r templates/shiny-app/ docs/shiny-app/
+```
+
+### 5. 검증
 - CSS 파일 생성 확인
 - 렌더링 결과 `docs/` 폴더 확인
 - 에러/경고 메시지 보고
