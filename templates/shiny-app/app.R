@@ -35,7 +35,10 @@ quarto_craft_theme <- bs_theme(
 
 # --- UI ---
 ui <- page_navbar(
-  title = "Quarto Craft",
+  title = tags$span(
+    tags$img(src = "logo-favicon.svg", height = "28px", style = "margin-right: 8px; vertical-align: middle;"),
+    "Quarto Craft"
+  ),
   theme = quarto_craft_theme,
   lang = "ko",
   fillable = TRUE,

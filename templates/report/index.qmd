@@ -4,6 +4,12 @@ subtitle: "부제목을 입력하세요"
 author: "작성자"
 date: today
 date-format: "YYYY년 MM월 DD일"
+title-block-banner: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/svg+xml" href="../../design-system/brand/favicon.svg">
 abstract: |
   이 문서는 Quarto Craft 디자인 시스템을 활용한 보고서 템플릿입니다.
   깔끔한 타이포그래피와 일관된 디자인 토큰을 적용하여

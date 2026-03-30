@@ -10,6 +10,7 @@ format:
     favicon: ../../design-system/brand/favicon.svg
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
+    logo: ../../design-system/brand/favicon.svg
     nav-buttons:
       - icon: github
         href: https://github.com
