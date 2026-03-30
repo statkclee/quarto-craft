@@ -1,0 +1,15 @@
+project:
+  output-dir: ../../docs/typst-pdf
+
+format:
+  typst:
+    lang: ko
+    mainfont: "Pretendard"
+    monofont: "D2Coding ligature"
+    fontsize: 11pt
+    margin:
+      x: 2.5cm
+      y: 2.5cm
+    toc: true
+    number-sections: true
+    columns: 1

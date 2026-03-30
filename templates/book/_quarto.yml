@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: docs
+  output-dir: ../../docs/book
 
 book:
   title: "책 제목"
@@ -22,8 +22,8 @@ format:
     monofont: "JetBrains Mono"
     toc: true
     number-sections: true
-  pdf:
-    documentclass: report
-    lang: ko
-    mainfont: "Pretendard Variable"
-    monofont: "JetBrains Mono"
+  # pdf:
+  #   documentclass: report
+  #   lang: ko
+  #   mainfont: "Pretendard Variable"
+  #   monofont: "JetBrains Mono"
