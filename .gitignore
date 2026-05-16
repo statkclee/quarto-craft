@@ -1,6 +1,5 @@
 node_modules/
 .quarto/
-docs/
 *.css.map
 .DS_Store
 .env
@@ -18,3 +17,6 @@ ui_kits/
 
 # 로컬 도구
 SKILL.md
+
+/.quarto/
+**/*.quarto_ipynb
