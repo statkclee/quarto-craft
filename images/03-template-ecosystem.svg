@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820" font-family="'Pretendard Variable', Pretendard, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 920" font-family="'Pretendard Variable', Pretendard, sans-serif">
   <style>
     .title { font-size: 18px; font-weight: 700; fill: #171717; letter-spacing: -0.02em; }
     .subtitle { font-size: 11px; fill: #525252; font-style: italic; font-family: 'Noto Serif KR', Georgia, serif; }
@@ -16,7 +16,7 @@
     .accent { fill: #1E5688; }
   </style>
 
-  <rect width="900" height="820" fill="#FFFFFF"/>
+  <rect width="900" height="920" fill="#FFFFFF"/>
 
   <text x="40" y="40" class="title">Quarto Craft · 템플릿 에코시스템</text>
   <text x="40" y="56" class="subtitle">9개 문서 유형 · _brand.yml 단일 토큰으로 통합</text>
@@ -249,22 +249,22 @@
     <text x="0" y="164" class="tpl-desc">멀티페이지 사이트 · 랜딩 · 가이드</text>
   </g>
 
-  <line x1="40" y1="640" x2="860" y2="640" class="axis"/>
+  <line x1="40" y1="700" x2="860" y2="700" class="axis"/>
 
   <!-- Render Pipeline Note -->
-  <text x="40" y="664" class="section">출력 구조</text>
-  <g transform="translate(40, 670)" font-family="'JetBrains Mono', monospace" font-size="9" fill="#404040">
-    <text x="0" y="14">docs/templates/</text>
-    <text x="20" y="28">├── report/index.html</text>
-    <text x="20" y="40">├── presentation/index.html       <tspan fill="#737373">(revealjs)</tspan></text>
-    <text x="20" y="52">├── dashboard/index.html          <tspan fill="#737373">(dashboard)</tspan></text>
-    <text x="20" y="64">├── book/  <tspan fill="#737373">→ html + PDF</tspan></text>
-    <text x="20" y="76">├── website/  <tspan fill="#737373">→ multi-page site</tspan></text>
-    <text x="320" y="28">manuscript/  <tspan fill="#737373">→ html + Typst</tspan></text>
-    <text x="320" y="40">blog/  <tspan fill="#737373">→ listing site</tspan></text>
-    <text x="320" y="52">confluence/index.html          <tspan fill="#737373">(→ Confluence)</tspan></text>
-    <text x="320" y="64">typst-pdf/index.pdf            <tspan fill="#737373">(typst)</tspan></text>
+  <text x="40" y="728" class="section">출력 구조</text>
+  <g transform="translate(40, 750)" font-family="'JetBrains Mono', monospace" font-size="10" fill="#404040">
+    <text x="0"   y="0">docs/templates/</text>
+    <text x="20"  y="24">├── report/index.html</text>
+    <text x="20"  y="46">├── presentation/index.html       <tspan fill="#737373">(revealjs)</tspan></text>
+    <text x="20"  y="68">├── dashboard/index.html          <tspan fill="#737373">(dashboard)</tspan></text>
+    <text x="20"  y="90">├── book/                         <tspan fill="#737373">→ html + PDF</tspan></text>
+    <text x="20"  y="112">└── website/                       <tspan fill="#737373">→ multi-page site</tspan></text>
+    <text x="440" y="24">manuscript/                     <tspan fill="#737373">→ html + Typst</tspan></text>
+    <text x="440" y="46">blog/                           <tspan fill="#737373">→ listing site</tspan></text>
+    <text x="440" y="68">confluence/index.html           <tspan fill="#737373">(→ Confluence)</tspan></text>
+    <text x="440" y="90">typst-pdf/index.pdf             <tspan fill="#737373">(typst)</tspan></text>
   </g>
 
-  <line x1="40" y1="800" x2="860" y2="800" class="axis"/>
+  <line x1="40" y1="900" x2="860" y2="900" class="axis"/>
 </svg>
