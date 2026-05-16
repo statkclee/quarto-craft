@@ -8,18 +8,6 @@ abstract: |
   이 문서는 Quarto Craft 디자인 시스템의 Typst PDF 템플릿입니다.
   LaTeX 대비 빠른 컴파일 속도와 간결한 문법으로
   한국어 PDF 문서를 생성합니다.
-format:
-  typst:
-    lang: ko
-    mainfont: "Pretendard"
-    monofont: "D2Coding ligature"
-    fontsize: 11pt
-    margin:
-      x: 2.5cm
-      y: 2.5cm
-    toc: true
-    number-sections: true
-    columns: 1
 ---
 
 ## 개요

@@ -9,7 +9,7 @@ format:
   html:
     include-in-header:
       text: |
-        <link rel="icon" type="image/svg+xml" href="../../design-system/brand/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="../../assets/brand/favicon.svg">
 abstract: |
   이 문서는 Quarto Craft 디자인 시스템을 활용한 보고서 템플릿입니다.
   깔끔한 타이포그래피와 일관된 디자인 토큰을 적용하여

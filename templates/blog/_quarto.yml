@@ -2,10 +2,12 @@ project:
   type: website
   output-dir: ../../docs/templates/blog
 
+brand: ../../_brand.yml
+
 website:
   title: "Quarto Craft 블로그"
   description: "한국어 최적화 Quarto 블로그 템플릿"
-  favicon: ../../design-system/brand/favicon.svg
+  favicon: ../../assets/brand/favicon.svg
   navbar:
     left:
       - href: index.qmd
@@ -19,10 +21,8 @@ format:
   html:
     theme:
       - cosmo
+      - brand
       - ../../scss/quarto-theme.scss
     lang: ko
     date-format: "YYYY년 MM월 DD일"
-    mainfont: "Pretendard Variable"
-    monofont: "JetBrains Mono"
     toc: true
-    favicon: ../../design-system/brand/favicon.svg

@@ -2,6 +2,8 @@ project:
   type: manuscript
   output-dir: ../../docs/templates/manuscript
 
+brand: ../../_brand.yml
+
 manuscript:
   article: index.qmd
 
@@ -9,19 +11,19 @@ format:
   html:
     theme:
       - cosmo
+      - brand
       - ../../scss/quarto-theme.scss
     lang: ko
-    mainfont: "Pretendard Variable"
-    monofont: "JetBrains Mono"
     toc: true
     number-sections: true
   typst:
     lang: ko
-    mainfont: "Pretendard"
-    monofont: "JetBrains Mono"
-    fontsize: 11pt
+    monofont: "D2Coding ligature"
     toc: true
     number-sections: true
     margin:
       x: 2.5cm
       y: 2.5cm
+    fontsize: 11pt
+    linestretch: 1.5
+    columns: 1

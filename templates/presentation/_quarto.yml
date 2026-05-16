@@ -1,12 +1,12 @@
 project:
-  output-dir: ../../docs/presentation
+  output-dir: ../../docs/templates/presentation
+
+brand: ../../_brand.yml
 
 format:
   revealjs:
-    theme: [default, ../../scss/quarto-revealjs.scss]
+    theme: [default, brand, ../../scss/quarto-revealjs.scss]
     lang: ko
-    mainfont: "Pretendard Variable"
-    monofont: "JetBrains Mono"
     slide-number: true
     hash-type: number
     center: false

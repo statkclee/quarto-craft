@@ -1,15 +1,17 @@
 project:
-  output-dir: ../../docs/typst-pdf
+  output-dir: ../../docs/templates/typst-pdf
+
+brand: ../../_brand.yml
 
 format:
   typst:
     lang: ko
-    mainfont: "Pretendard"
     monofont: "D2Coding ligature"
-    fontsize: 11pt
+    toc: true
+    number-sections: true
     margin:
       x: 2.5cm
       y: 2.5cm
-    toc: true
-    number-sections: true
+    fontsize: 11pt
+    linestretch: 1.5
     columns: 1

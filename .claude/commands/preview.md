@@ -18,4 +18,4 @@ quarto preview
 - 미리보기는 파일 변경 시 자동 새로고침
 - 포트 충돌 시: `quarto preview --port 4200`
 - 중지: Ctrl+C
-- SCSS 변경 시 `npm run watch`를 별도 터미널에서 실행하면 CSS 자동 빌드
+- SCSS는 Quarto가 직접 컴파일하므로 별도 watch 불필요

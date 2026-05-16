@@ -69,17 +69,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../../../design-system/brand/favicon.svg" rel="icon" type="image/svg+xml">
+<link href="../../../../assets/brand/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-552c1581ed7ec5d2e3375c613a7fc4cb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1d9ec3655961a3cbe781c05ab5f3a30e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-99e26c70f8483b7fc204a3d53feaba30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d274f34f30b0d3c1173e726389e3d53e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-99e26c70f8483b7fc204a3d53feaba30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -155,6 +159,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#quarto-craft란" id="toc-quarto-craft란" class="nav-link active" data-scroll-target="#quarto-craft란">Quarto Craft란?</a>
   <ul class="collapse">
   <li><a href="#주요-특징" id="toc-주요-특징" class="nav-link" data-scroll-target="#주요-특징">주요 특징</a></li>
+  <li><a href="#타입-스케일" id="toc-타입-스케일" class="nav-link" data-scroll-target="#타입-스케일">타입 스케일</a></li>
+  <li><a href="#종-템플릿-생태계" id="toc-종-템플릿-생태계" class="nav-link" data-scroll-target="#종-템플릿-생태계">9종 템플릿 생태계</a></li>
   <li><a href="#코드-예시" id="toc-코드-예시" class="nav-link" data-scroll-target="#코드-예시">코드 예시</a></li>
   </ul></li>
   <li><a href="#시작하기" id="toc-시작하기" class="nav-link" data-scroll-target="#시작하기">시작하기</a></li>
@@ -198,6 +204,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.svg" class="img-fluid figure-img"></p>
+<figcaption>Quarto Craft 색상 시스템 — Quarto Blue 팔레트</figcaption>
+</figure>
+</div>
 <section id="quarto-craft란" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-craft란">Quarto Craft란?</h2>
 <p><strong>Quarto Craft</strong>는 한국어 문서에 최적화된 Quarto 디자인 시스템입니다.</p>
@@ -207,15 +219,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Pretendard Variable</strong> 가변 폰트로 한글 렌더링 최적화</li>
 <li><code>word-break: keep-all</code>로 단어 단위 줄바꿈</li>
 <li><code>line-height: 1.75</code> — 한국어에 적합한 넓은 행간</li>
-<li>4종 템플릿: 리포트 · 프레젠테이션 · 대시보드 · 웹북</li>
+<li>9종 템플릿: 리포트 · 프레젠테이션 · 대시보드 · 책 · 원고 · 블로그 · 웹사이트 · Confluence · Typst PDF</li>
 </ul>
+</section>
+<section id="타입-스케일" class="level3">
+<h3 class="anchored" data-anchor-id="타입-스케일">타입 스케일</h3>
+<p>Major Third(1.250)를 기반으로 한 8단계 폰트 스케일로 시각적 위계를 명확하게 표현합니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="typography.svg" class="img-fluid figure-img"></p>
+<figcaption>Major Third 타입 스케일</figcaption>
+</figure>
+</div>
+</section>
+<section id="종-템플릿-생태계" class="level3">
+<h3 class="anchored" data-anchor-id="종-템플릿-생태계">9종 템플릿 생태계</h3>
+<p>같은 <code>_brand.yml</code> 토큰을 공유하므로 HTML · RevealJS · Typst PDF가 색상·폰트·간격에서 완전히 일관됩니다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="templates.svg" class="img-fluid figure-img"></p>
+<figcaption>템플릿 생태계 — 단일 brand 토큰을 공유</figcaption>
+</figure>
+</div>
 </section>
 <section id="코드-예시" class="level3">
 <h3 class="anchored" data-anchor-id="코드-예시">코드 예시</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(wt, mpg)) <span class="sc">+</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"#4F46E5"</span>) <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"#4080B7"</span>) <span class="sc">+</span>  <span class="co"># quarto-blue-600</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>

@@ -1,6 +1,6 @@
 ---
 title: "소개"
-image: ../../design-system/brand/logo.svg
+image: ../../assets/brand/logo.svg
 about:
   template: jolla
   links:

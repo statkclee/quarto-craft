@@ -5,7 +5,7 @@ author: "발표자"
 date: today
 date-format: "YYYY년 MM월 DD일"
 title-slide-attributes:
-  data-background-image: "../../design-system/brand/logo.svg"
+  data-background-image: "../../assets/brand/logo.svg"
   data-background-size: "120px"
   data-background-position: "5% 90%"
   data-background-opacity: "0.3"

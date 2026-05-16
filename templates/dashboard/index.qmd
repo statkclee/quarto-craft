@@ -9,10 +9,10 @@ format:
       - cosmo
       - ../../scss/quarto-theme.scss
     lang: ko
-    favicon: ../../design-system/brand/favicon.svg
+    favicon: ../../assets/brand/favicon.svg
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
-    logo: ../../design-system/brand/favicon.svg
+    logo: ../../assets/brand/favicon.svg
     nav-buttons:
       - icon: github
         href: https://github.com

@@ -69,17 +69,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../../../design-system/brand/favicon.svg" rel="icon" type="image/svg+xml">
+<link href="../../../../assets/brand/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-552c1581ed7ec5d2e3375c613a7fc4cb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b2fffa812c9a63c86a93cb546409fbab.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1d9ec3655961a3cbe781c05ab5f3a30e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-99e26c70f8483b7fc204a3d53feaba30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d274f34f30b0d3c1173e726389e3d53e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-99e26c70f8483b7fc204a3d53feaba30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -155,6 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#quarto-1.9의-새-기능" id="toc-quarto-1.9의-새-기능" class="nav-link active" data-scroll-target="#quarto-1.9의-새-기능">Quarto 1.9의 새 기능</a>
   <ul class="collapse">
   <li><a href="#latex-대비-typst의-장점" id="toc-latex-대비-typst의-장점" class="nav-link" data-scroll-target="#latex-대비-typst의-장점">LaTeX 대비 Typst의 장점</a></li>
+  <li><a href="#한국어-조판-최적화" id="toc-한국어-조판-최적화" class="nav-link" data-scroll-target="#한국어-조판-최적화">한국어 조판 최적화</a></li>
   <li><a href="#설정-예시" id="toc-설정-예시" class="nav-link" data-scroll-target="#설정-예시">설정 예시</a></li>
   </ul></li>
   </ul>
@@ -198,6 +203,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.svg" class="img-fluid figure-img"></p>
+<figcaption>Quarto Craft 빌드 파이프라인 — qmd에서 HTML/PDF/RevealJS로</figcaption>
+</figure>
+</div>
 <section id="quarto-1.9의-새-기능" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-1.9의-새-기능">Quarto 1.9의 새 기능</h2>
 <p>Quarto 1.9부터 <strong>Typst</strong> 기반의 멀티 챕터 PDF 북을 공식 지원합니다.</p>
@@ -229,6 +240,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+</section>
+<section id="한국어-조판-최적화" class="level3">
+<h3 class="anchored" data-anchor-id="한국어-조판-최적화">한국어 조판 최적화</h3>
+<p>Quarto Craft는 Typst 출력에서도 한국어 가독성 규칙을 적용합니다 — <code>linestretch: 1.5</code> 행간, Pretendard 폰트, D2Coding ligature 코드 폰트.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="korean.svg" class="img-fluid figure-img"></p>
+<figcaption>한국어 조판 최적화 규칙</figcaption>
+</figure>
+</div>
 </section>
 <section id="설정-예시" class="level3">
 <h3 class="anchored" data-anchor-id="설정-예시">설정 예시</h3>

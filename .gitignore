@@ -1,9 +1,15 @@
-node_modules/
 .quarto/
-*.css.map
 .DS_Store
 .env
 *.log
+
+# iCloud 동기화 충돌 파일/폴더
+* 2.*
+* 3.*
+* 4.*
+* 2/
+* 3/
+*[Cc]opy*
 
 # 빌드 아티팩트
 *.tex
