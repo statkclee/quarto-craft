@@ -1,0 +1,27 @@
+project:
+  type: manuscript
+  output-dir: ../../docs/templates/manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - ../../scss/quarto-theme.scss
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    toc: true
+    number-sections: true
+  typst:
+    lang: ko
+    mainfont: "Pretendard"
+    monofont: "JetBrains Mono"
+    fontsize: 11pt
+    toc: true
+    number-sections: true
+    margin:
+      x: 2.5cm
+      y: 2.5cm

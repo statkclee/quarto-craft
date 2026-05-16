@@ -1,0 +1,34 @@
+---
+title: "Quarto Craft 소개"
+description: "한국어 최적화 Quarto 디자인 시스템을 소개합니다"
+date: 2026-05-01
+categories: [Quarto, 디자인시스템]
+image: thumbnail.png
+---
+
+## Quarto Craft란?
+
+**Quarto Craft**는 한국어 문서에 최적화된 Quarto 디자인 시스템입니다.
+
+### 주요 특징
+
+- **Pretendard Variable** 가변 폰트로 한글 렌더링 최적화
+- `word-break: keep-all`로 단어 단위 줄바꿈
+- `line-height: 1.75` — 한국어에 적합한 넓은 행간
+- 4종 템플릿: 리포트 · 프레젠테이션 · 대시보드 · 웹북
+
+### 코드 예시
+
+```r
+library(ggplot2)
+
+ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(color = "#4F46E5") +
+  theme_minimal()
+```
+
+## 시작하기
+
+```bash
+quarto render templates/report/index.qmd
+```

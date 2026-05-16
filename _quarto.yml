@@ -5,6 +5,7 @@ project:
     - templates/presentation/index.qmd
     - templates/report/index.qmd
     - templates/typst-pdf/index.qmd
+    - templates/confluence/index.qmd
 
 format:
   html:

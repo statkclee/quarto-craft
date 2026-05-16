@@ -1,4 +1,6 @@
 templates/book
+templates/manuscript
+templates/blog
 PLAN.md
 PROGRESS.md
 SKILL.md
