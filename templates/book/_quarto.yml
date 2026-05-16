@@ -13,6 +13,7 @@ book:
     - index.qmd
     - chapter-01.qmd
     - chapter-02.qmd
+  downloads: [pdf]
 
 format:
   html:
@@ -25,8 +26,13 @@ format:
     monofont: "JetBrains Mono"
     toc: true
     number-sections: true
-  # pdf:
-  #   documentclass: report
-  #   lang: ko
-  #   mainfont: "Pretendard Variable"
-  #   monofont: "JetBrains Mono"
+  typst:
+    lang: ko
+    mainfont: "Pretendard"
+    monofont: "JetBrains Mono"
+    fontsize: 11pt
+    toc: true
+    number-sections: true
+    margin:
+      x: 2.5cm
+      y: 2.5cm
