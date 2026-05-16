@@ -5,3 +5,16 @@ docs/
 .DS_Store
 .env
 *.log
+
+# 빌드 아티팩트
+*.tex
+templates/**/.gitignore
+
+# 로컬 전용 생성 콘텐츠
+preview/
+screenshots/
+slides/
+ui_kits/
+
+# 로컬 도구
+SKILL.md
