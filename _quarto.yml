@@ -1,6 +1,10 @@
 project:
-  type: website
   output-dir: docs
+  render:
+    - templates/dashboard/index.qmd
+    - templates/presentation/index.qmd
+    - templates/report/index.qmd
+    - templates/typst-pdf/index.qmd
 
 format:
   html:

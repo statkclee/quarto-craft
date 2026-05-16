@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: ../../docs/book
+  output-dir: ../../docs/templates/book
 
 book:
   title: "책 제목"
