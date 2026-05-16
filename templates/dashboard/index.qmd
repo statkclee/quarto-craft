@@ -3,6 +3,19 @@ title: "대시보드 제목"
 author: "작성자"
 date: today
 date-format: "YYYY년 MM월 DD일"
+format:
+  dashboard:
+    theme:
+      - cosmo
+      - ../../scss/quarto-theme.scss
+    lang: ko
+    favicon: ../../design-system/brand/favicon.svg
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    logo: ../../design-system/brand/favicon.svg
+    nav-buttons:
+      - icon: github
+        href: https://github.com
 ---
 
 ## Row {height=30%}

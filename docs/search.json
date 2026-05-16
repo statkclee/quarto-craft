@@ -329,27 +329,6 @@
     "text": "If the user asks for something the system doesn’t directly cover (a colour outside the ramp, a new icon style, a non-Korean layout), default to the closest neighbour in the existing system and flag the substitution. Don’t invent new visual primitives without permission.\nSource: this skill is a recreation of https://github.com/statkclee/quarto-craft. Browse the upstream for richer source material than what’s distilled here."
   },
   {
-    "objectID": "templates/dashboard/index.html",
-    "href": "templates/dashboard/index.html",
-    "title": "대시보드 제목",
-    "section": "",
-    "text": "dict(\n  value = \"12,345\",\n  icon = \"people\",\n  color = \"primary\"\n)\n\n{'value': '12,345', 'icon': 'people', 'color': 'primary'}\n\n\n\n\n\n\ndict(\n  value = \"3.2%\",\n  icon = \"graph-up\",\n  color = \"success\"\n)\n\n{'value': '3.2%', 'icon': 'graph-up', 'color': 'success'}\n\n\n\n\n\n\ndict(\n  value = \"4분 32초\",\n  icon = \"clock\",\n  color = \"info\"\n)\n\n{'value': '4분 32초', 'icon': 'clock', 'color': 'info'}"
-  },
-  {
-    "objectID": "templates/dashboard/index.html#row",
-    "href": "templates/dashboard/index.html#row",
-    "title": "대시보드 제목",
-    "section": "",
-    "text": "dict(\n  value = \"12,345\",\n  icon = \"people\",\n  color = \"primary\"\n)\n\n{'value': '12,345', 'icon': 'people', 'color': 'primary'}\n\n\n\n\n\n\ndict(\n  value = \"3.2%\",\n  icon = \"graph-up\",\n  color = \"success\"\n)\n\n{'value': '3.2%', 'icon': 'graph-up', 'color': 'success'}\n\n\n\n\n\n\ndict(\n  value = \"4분 32초\",\n  icon = \"clock\",\n  color = \"info\"\n)\n\n{'value': '4분 32초', 'icon': 'clock', 'color': 'info'}"
-  },
-  {
-    "objectID": "templates/dashboard/index.html#row-1",
-    "href": "templates/dashboard/index.html#row-1",
-    "title": "대시보드 제목",
-    "section": "2 Row",
-    "text": "2 Row\n\n2.1 Column\n\nimport matplotlib.pyplot as plt\nimport matplotlib\nmatplotlib.rcParams['font.family'] = 'AppleGothic'\nmatplotlib.rcParams['axes.unicode_minus'] = False\n\nmonths = ['1월', '2월', '3월', '4월', '5월', '6월']\nvalues = [120, 150, 180, 220, 280, 350]\n\nfig, ax = plt.subplots(figsize=(8, 4))\n_ = ax.plot(months, values, marker='o', color='#4F46E5', linewidth=2.5, markersize=8, markerfacecolor='white', markeredgewidth=2)\n_ = ax.fill_between(range(len(months)), values, alpha=0.08, color='#4F46E5')\n_ = ax.set_ylabel('방문자 수', fontsize=12)\nax.spines[['top', 'right']].set_visible(False)\n_ = ax.grid(axis='y', alpha=0.3, linestyle='--')\nax.tick_params(labelsize=11)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n2.2 Column\n\nimport matplotlib.pyplot as plt\nimport matplotlib\nmatplotlib.rcParams['font.family'] = 'AppleGothic'\nmatplotlib.rcParams['axes.unicode_minus'] = False\n\nlabels = ['기술', '디자인', '마케팅', '기타']\nsizes = [40, 25, 20, 15]\ncolors = ['#4F46E5', '#10B981', '#F59E0B', '#A3A3A3']\n\nfig, ax = plt.subplots(figsize=(6, 5))\nwedges, texts, autotexts = ax.pie(\n    sizes, labels=labels, colors=colors,\n    autopct='%1.0f%%', startangle=90,\n    explode=(0.03, 0.03, 0.03, 0.03),\n    pctdistance=0.75,\n    wedgeprops=dict(width=0.5, edgecolor='white', linewidth=2)\n)\nfor t in texts:\n    t.set_fontsize(12)\nfor t in autotexts:\n    t.set_fontsize(11)\n    t.set_fontweight('bold')\n_ = ax.axis('equal')\nplt.tight_layout()\nplt.show()"
-  },
-  {
     "objectID": "templates/book/chapter-02.html",
     "href": "templates/book/chapter-02.html",
     "title": "타이포그래피",
@@ -404,54 +383,5 @@
     "title": "보고서 제목",
     "section": "3 결론",
     "text": "3 결론\nQuarto Craft 디자인 시스템을 활용하면 일관된 스타일의 전문적인 문서를 빠르게 작성할 수 있습니다."
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html",
-    "href": "templates/typst-pdf/index.html",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "",
-    "text": "Typst는 LaTeX의 현대적 대안으로, Quarto 1.4+에서 공식 지원합니다.\n\n\n\n빠른 컴파일: LaTeX 대비 10~100배 빠른 빌드\n한국어 기본 지원: 별도 패키지 없이 한글 조판 가능\n간결한 문법: 복잡한 LaTeX 명령 불필요\n폰트 자동 탐색: 시스템 폰트 직접 사용"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#개요",
-    "href": "templates/typst-pdf/index.html#개요",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "",
-    "text": "Typst는 LaTeX의 현대적 대안으로, Quarto 1.4+에서 공식 지원합니다.\n\n\n\n빠른 컴파일: LaTeX 대비 10~100배 빠른 빌드\n한국어 기본 지원: 별도 패키지 없이 한글 조판 가능\n간결한 문법: 복잡한 LaTeX 명령 불필요\n폰트 자동 탐색: 시스템 폰트 직접 사용"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#타이포그래피-샘플",
-    "href": "templates/typst-pdf/index.html#타이포그래피-샘플",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "2 타이포그래피 샘플",
-    "text": "2 타이포그래피 샘플\n\n2.1 본문 텍스트\n이것은 Pretendard Variable 폰트로 조판된 한국어 본문입니다. 적절한 행간과 자간으로 인쇄물 수준의 가독성을 제공합니다. 단어 단위 줄바꿈이 적용되어 한국어 텍스트가 자연스럽게 배치됩니다.\n\n\n2.2 인용문\n\n좋은 타이포그래피는 보이지 않는다. 나쁜 타이포그래피는 어디에서나 보인다.\n— Oliver Reichenstein\n\n\n\n2.3 목록\n순서 없는 목록:\n\n디자인 토큰 기반 색상 체계\nMajor Third (1.250) 타입 스케일\n4px 단위 간격 시스템\n\n순서 있는 목록:\n\n프로젝트 구조 설계\n디자인 토큰 정의\n컴포넌트 스타일 구현\n템플릿 생성 및 검증"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#코드",
-    "href": "templates/typst-pdf/index.html#코드",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "3 코드",
-    "text": "3 코드\n인라인 코드: quarto render --to typst\n코드 블록:\nimport pandas as pd\n\n# 데이터 분석 예시\ndf = pd.read_csv(\"data.csv\")\nsummary = df.groupby(\"category\").agg(\n    count=(\"id\", \"count\"),\n    mean_value=(\"value\", \"mean\")\n)\nprint(summary)\nlibrary(dplyr)\n\n# R 코드 예시\nmtcars |&gt;\n  group_by(cyl) |&gt;\n  summarise(\n    mean_mpg = mean(mpg),\n    sd_mpg = sd(mpg)\n  )"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#표",
-    "href": "templates/typst-pdf/index.html#표",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "4 표",
-    "text": "4 표\n\nQuarto Craft 주요 디자인 토큰\n\n\n토큰\n값\n용도\n\n\n\n\n$font-size-base\n1rem (16px)\n본문 텍스트\n\n\n$font-size-lg\n1.25rem (20px)\n강조 텍스트\n\n\n$font-size-2xl\n1.953rem\nH3 제목\n\n\n$font-size-4xl\n3.052rem\nH1 제목\n\n\n$line-height-normal\n1.75\n한국어 본문 행간\n\n\n$spacing-4\n1rem (16px)\n기본 간격"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#수식",
-    "href": "templates/typst-pdf/index.html#수식",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "5 수식",
-    "text": "5 수식\n인라인 수식: \\(E = mc^2\\)\n블록 수식:\n\\[\nf(x) = \\int_{-\\infty}^{\\infty} \\hat{f}(\\xi) e^{2\\pi i \\xi x} d\\xi\n\\]"
-  },
-  {
-    "objectID": "templates/typst-pdf/index.html#결론",
-    "href": "templates/typst-pdf/index.html#결론",
-    "title": "Quarto Craft 기술 보고서",
-    "section": "6 결론",
-    "text": "6 결론\nTypst 기반 PDF는 한국어 문서 작성에 있어 LaTeX보다 접근성이 높고, Quarto와의 통합을 통해 코드 실행 결과를 포함한 재현 가능한 문서를 생성할 수 있습니다."
   }
 ]
