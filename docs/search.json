@@ -35,48 +35,6 @@
     "text": "템플릿과 문서에서 이모지를 사용할 경우:\n\n\n\n이모지\n의미\n사용 위치\n\n\n\n\n📊\n데이터/차트\nDashboard, 분석\n\n\n📝\n문서/보고서\nReport\n\n\n🎨\n디자인/스타일\n디자인 시스템\n\n\n📖\n책/가이드\nBook\n\n\n🖥️\n프레젠테이션\nPresentation\n\n\n⚡\n빠른/성능\nTypst\n\n\n🔧\n설정/도구\n빌드, 설정"
   },
   {
-    "objectID": "templates/presentation/index.html",
-    "href": "templates/presentation/index.html",
-    "title": "프레젠테이션 제목",
-    "section": "",
-    "text": "이 프레젠테이션은 Quarto Craft 디자인 시스템을 사용합니다.\n\n일관된 타이포그래피\n한국어 최적화\n깔끔한 코드 하이라이팅\n\n\n\n\nMajor Third (1.250) 비율의 타입 스케일을 사용합니다.\n\nH1: 3.052rem\nH2: 1.953rem\nH3: 1.563rem\n본문: 1rem"
-  },
-  {
-    "objectID": "templates/presentation/index.html#개요",
-    "href": "templates/presentation/index.html#개요",
-    "title": "프레젠테이션 제목",
-    "section": "",
-    "text": "이 프레젠테이션은 Quarto Craft 디자인 시스템을 사용합니다.\n\n일관된 타이포그래피\n한국어 최적화\n깔끔한 코드 하이라이팅"
-  },
-  {
-    "objectID": "templates/presentation/index.html#타입-스케일",
-    "href": "templates/presentation/index.html#타입-스케일",
-    "title": "프레젠테이션 제목",
-    "section": "",
-    "text": "Major Third (1.250) 비율의 타입 스케일을 사용합니다.\n\nH1: 3.052rem\nH2: 1.953rem\nH3: 1.563rem\n본문: 1rem"
-  },
-  {
-    "objectID": "templates/presentation/index.html#코드-예시",
-    "href": "templates/presentation/index.html#코드-예시",
-    "title": "프레젠테이션 제목",
-    "section": "2.1 코드 예시",
-    "text": "2.1 코드 예시\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "templates/presentation/index.html#표-예시",
-    "href": "templates/presentation/index.html#표-예시",
-    "title": "프레젠테이션 제목",
-    "section": "2.2 표 예시",
-    "text": "2.2 표 예시\n\n\n\n항목\n설명\n\n\n\n\n본문 폰트\nPretendard Variable\n\n\n코드 폰트\nJetBrains Mono\n\n\n세리프 폰트\nNoto Serif KR"
-  },
-  {
-    "objectID": "templates/presentation/index.html#감사합니다",
-    "href": "templates/presentation/index.html#감사합니다",
-    "title": "프레젠테이션 제목",
-    "section": "3.1 감사합니다",
-    "text": "3.1 감사합니다\n질문이 있으시면 말씀해 주세요."
-  },
-  {
     "objectID": "templates/book/chapter-01.html",
     "href": "templates/book/chapter-01.html",
     "title": "디자인 토큰",

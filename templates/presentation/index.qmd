@@ -9,6 +9,20 @@ title-slide-attributes:
   data-background-size: "120px"
   data-background-position: "5% 90%"
   data-background-opacity: "0.3"
+format:
+  revealjs:
+    theme: [default, ../../scss/quarto-revealjs.scss]
+    lang: ko
+    mainfont: "Pretendard Variable"
+    monofont: "JetBrains Mono"
+    slide-number: true
+    hash-type: number
+    center: false
+    transition: fade
+    width: 1600
+    height: 900
+    margin: 0.1
+    progress: true
 ---
 
 # 01 타이포그래피 {.section-slide}
