@@ -93,15 +93,15 @@
   <text x="40" y="582" class="section">SCSS 토큰 요약</text>
   <g transform="translate(40, 592)" font-family="'JetBrains Mono', monospace" font-size="10">
     <text x="0" y="14">
-      <tspan fill="#3730A3" font-weight="700">$line-height-normal:  1.75</tspan>
+      <tspan fill="#1E5688" font-weight="700">$line-height-normal:  1.75</tspan>
       <tspan fill="#737373">  // 한글 본문</tspan>
     </text>
     <text x="280" y="14">
-      <tspan fill="#3730A3" font-weight="700">word-break: keep-all</tspan>
+      <tspan fill="#1E5688" font-weight="700">word-break: keep-all</tspan>
       <tspan fill="#737373">  // 모든 본문</tspan>
     </text>
     <text x="560" y="14">
-      <tspan fill="#3730A3" font-weight="700">$letter-spacing-tight: -0.02em</tspan>
+      <tspan fill="#1E5688" font-weight="700">$letter-spacing-tight: -0.02em</tspan>
     </text>
   </g>
 </svg>
