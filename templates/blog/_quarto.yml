@@ -21,6 +21,7 @@ format:
       - cosmo
       - ../../scss/quarto-theme.scss
     lang: ko
+    date-format: "YYYY년 MM월 DD일"
     mainfont: "Pretendard Variable"
     monofont: "JetBrains Mono"
     toc: true

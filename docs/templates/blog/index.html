@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
@@ -199,16 +199,18 @@ window.Quarto = {
 
 
 
+
+
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
+<div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="VHlwc3QlMkNQREYlMkNCb29r" data-listing-date-sort="1778338800000" data-listing-file-modified-sort="1778936146419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
 <a href="./posts/2026-05-10-두번째-포스트/index.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./posts/2026-05-10-두번째-포스트/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Typst PDF 북 만들기
 </h5>
-<div class="listing-reading-time card-text text-muted">1 분</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VHlwc3Q='); return false;">Typst</div>
@@ -221,26 +223,27 @@ Typst PDF 북 만들기
 <div class="card-text listing-description delink">
 <p>Quarto 1.9+의 Typst 기반 PDF 북 기능을 소개합니다</p>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-<ol start="2026" type="1">
-<li><ol start="5" type="1">
-<li>10.
-</li></ol></li></ol></div>
-
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
 </div>
-<p>:::</p>
+<div class="listing-date">
+2026년 05월 10일
+</div>
+</div>
+</div>
 </div></a>
-<p>:::</p>
+</div>
 <div class="g-col-1" data-index="1" data-categories="UXVhcnRvJTJDJUVCJTk0JTk0JUVDJTlFJTkwJUVDJTlEJUI4JUVDJThCJTlDJUVDJThBJUE0JUVEJTg1JTlD" data-listing-date-sort="1777561200000" data-listing-file-modified-sort="1778936140727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
 <a href="./posts/2026-05-01-첫번째-포스트/index.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./posts/2026-05-01-첫번째-포스트/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/2026-05-01-첫번째-포스트/thumbnail.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Quarto Craft 소개
 </h5>
-<div class="listing-reading-time card-text text-muted">1 분</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
@@ -251,32 +254,20 @@ Quarto Craft 소개
 <div class="card-text listing-description delink">
 <p>한국어 최적화 Quarto 디자인 시스템을 소개합니다</p>
 </div>
-<div class="card-attribution card-text-small end">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
-<ol start="2026" type="1">
-<li><ol start="5" type="1">
-<li>1.
-</li></ol></li></ol></div>
-
-
+2026년 05월 01일
 </div>
-<p>:::</p>
+</div>
+</div>
 </div></a>
-<p>:::</p>
-<p>:::</p>
+</div>
+</div>
 <div class="listing-no-matching d-none">일치 없음</div>
-<p>:::</p>
-<p>:::</p>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></main></div>
-
-
- <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -677,7 +668,7 @@ Quarto Craft 소개
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
